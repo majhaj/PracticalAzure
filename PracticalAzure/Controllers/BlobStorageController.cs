@@ -11,7 +11,7 @@ namespace PracticalAzure.Controllers
         [HttpPost("upload")]
         public async Task<IActionResult> Upload(IFormFile file)
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=projectname1sagwc;AccountKey=/7dgIMi6aXaatqfXVaHurj9gVYa6jCcBbj0pC7laF3+y0IcWWKZ8r+8hhJ7uTzuXMbdbMJDC5M0b+AStdz3a/A==;EndpointSuffix=core.windows.net";
+            var connectionString = "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;";
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
             var containerName = "documents";

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BlobTriggerIsolatedN": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7282",
+      "launchBrowser": false
+    }
+  }
+}
